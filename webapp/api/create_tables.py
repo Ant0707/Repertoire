@@ -7,7 +7,6 @@ def create_tables():
 
     cursor = conn.cursor()
 
-    # Création des tables avec syntaxe compatible SQLite
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,

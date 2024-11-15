@@ -132,21 +132,3 @@ class User:
             return False
         finally:
             conn.close()
-
-
-if __name__ == "__main__":
-    create_tables()
-
-    fake = Faker(locale="fr_FR")
-    for _ in range(10):
-        user = User(first_name=fake.first_name(),
-                    last_name=fake.last_name(),
-                    phone_number=fake.phone_number(),
-                    address=fake.address())
-        user.save()
-
-    richard = User("Richard", "Boutin", phone_number="0123456789", address="1 rue de Paris")
-    richard.save()
-
-    arthur = User("Arthur", "Dupond", phone_number="0987654321", address="2 rue de Lyon")
-    arthur.save()
