@@ -1,9 +1,6 @@
 import re
 import string
-from faker import Faker
 from api.get_db_connection import get_db_connection
-from api.create_tables import create_tables
-
 
 class User:
     def __init__(self, first_name: str, last_name: str = "", phone_number: str = "", address: str = "", id: int = None):
