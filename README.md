@@ -10,4 +10,4 @@ To start the project:
 `python webapp/manage.py runserver`
 
 4. Open your browser and go to the address:
-http://127.0.0.1:8000/
+`http://127.0.0.1:8000/`
